@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="228.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.mycompany.laptopinventory.model.invoice.OrderDetailEditDialogController">
+    <children>
+        <VBox spacing="10">
+            <HBox spacing="10">
+                <Label text="Product ID:" />
+                <TextField fx:id="productOdIdField" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Quantity:" />
+                <TextField fx:id="quantityOdField" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Unit Price:" />
+                <TextField fx:id="unitPriceOdField" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Discount:" />
+                <TextField fx:id="discountOdField" />
+            </HBox>
+            <HBox spacing="10">
+                <Button onAction="#handleSave" text="Save" />
+                <Button onAction="#handleCancel" text="Cancel" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

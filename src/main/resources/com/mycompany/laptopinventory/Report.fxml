@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.laptopinventory.model.report.ReportController">
+    <children>
+        <VBox spacing="10" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10">
+            <HBox spacing="10">
+                <Label prefHeight="26.0" prefWidth="78.0" text="Loại báo cáo:" />
+                <ComboBox fx:id="reportTypeComboBox" prefWidth="200" />
+                <DatePicker fx:id="startDatePicker" layoutX="180.0" layoutY="10.0" />
+                <DatePicker fx:id="endDatePicker" layoutX="320.0" layoutY="15.0" />
+                <Button onAction="#handleGenerateReport" text="Xem" />
+            </HBox>
+            <ListView fx:id="reportListView" prefHeight="417.0" prefWidth="637.0" />
+        </VBox>
+    </children>
+</AnchorPane>
